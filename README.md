@@ -28,7 +28,12 @@ cd power-outage-tracker
 npm install
 ```
 
-3. Tạo file .env và cấu hình các biến môi trường:
+3. Tạo file .env dựa trên file mẫu:
+```bash
+cp env.example .env
+```
+
+Sau đó chỉnh sửa file `.env` với thông tin thực tế của bạn:
 ```
 PORT=3000
 MONGODB_URI=mongodb://localhost:27017/power-outage-tracker
@@ -90,7 +95,12 @@ sudo systemctl enable mongod
 
 ### 3. Cấu hình biến môi trường
 
-Tạo file `.env` trong thư mục dự án với nội dung mẫu:
+Sao chép file mẫu và cấu hình:
+```bash
+cp env.example .env
+```
+
+Chỉnh sửa file `.env` với nội dung:
 ```
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token
 TELEGRAM_CHAT_ID=your_telegram_chat_id
